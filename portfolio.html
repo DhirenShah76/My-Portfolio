@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
     <title>My Portfolio - HTML Only </title>
 </head>
 
@@ -23,19 +24,36 @@
     <main>
         <section id="about">
             <h2>About Me</h2>
-            <img src="img/Dhiren.jpg" alt="A professional headshot of Dhiren Kumar Sah" width="200">
-            <p>Hello! I am a passionate developer dedicated to building clean, accessible, and semantic web experiences.
-            </p>
+            <div class="about-container">
+                <div class="about-text">
+                    <p>Hello! I am a passionate developer dedicated to building clean, accessible, and semantic web experiences.</p>
+                </div>
+                <div class="about-image">
+                    <img src="img/Dhiren.jpg" alt="A professional headshot of Dhiren Kumar Sah" width="200">
+                </div>
+            </div>
         </section>
 
         <section id="skills">
             <h2>Technical Skills</h2>
-            <dl>
-                <dt>Frontend Development</dt>
-                <dd>HTML5, Semantic Markup, Figma, CSS</dd>
-                <dt>Programming Language</dt>
-                <dd>JavaScript, Python.</dd>
-            </dl>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Frontend Development</h3>
+                    <div class="skill-badges">
+                        <span class="skill-badge">HTML5</span>
+                        <span class="skill-badge">Semantic Markup</span>
+                        <span class="skill-badge">Figma</span>
+                        <span class="skill-badge">CSS</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-badges">
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">Python</span>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="projects">
